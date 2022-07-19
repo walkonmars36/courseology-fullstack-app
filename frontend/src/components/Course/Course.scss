@@ -1,0 +1,16 @@
+@use "../../assets/sass/resets.scss" as *;
+
+.course-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid green;
+  padding: 1em;
+
+  &__header {
+    margin: 1rem 0;
+  }
+
+  & > p {
+    margin: 0.5rem 0;
+  }
+}

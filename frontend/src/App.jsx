@@ -1,6 +1,6 @@
 import {useState, useEffect} from "react";
 import "./App.scss";
-import CoursesList from "./components/CoursesList/CoursesList";
+import CoursesList from "./containers/CoursesList/CoursesList";
 
 function App() {
   const [courses, setCourses] = useState([]);
@@ -15,6 +15,7 @@ function App() {
   useEffect(() => {
     getCourses();
   }, []);
+
   return (
     <div className="app__content">
       <CoursesList courses={courses} />

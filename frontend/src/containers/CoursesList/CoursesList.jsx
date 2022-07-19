@@ -1,5 +1,5 @@
 import "./CoursesList.scss";
-import Course from "../Course/Course";
+import Course from "../../components/Course/Course";
 
 const Courses = ({courses}) => {
   return (

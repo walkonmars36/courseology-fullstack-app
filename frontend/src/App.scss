@@ -1,9 +1,10 @@
+@use "../src/assets/sass/resets.scss" as *;
+
 .app {
   &__content {
     display: flex;
     flex-direction: column;
-    gap: 1em;
-    width: 80%;
+    width: 90%;
     margin: 1rem auto;
   }
 }
