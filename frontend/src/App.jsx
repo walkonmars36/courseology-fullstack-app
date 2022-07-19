@@ -23,7 +23,8 @@ function App() {
   const searchFilter = (event) => {
     if (event.target.value) {
       const searchTerm = event.target.value.toLowerCase();
-      const filteredCourses = courses.filter((course) => course.title.toLowerCase().includes(searchTerm));
+
+      const filteredCourses = courses.filter((course) => Object.keys(course).some((key) => course[key].toLowerCase().includes(searchTerm)));
 
       setSearchCourses(filteredCourses);
     } else {
