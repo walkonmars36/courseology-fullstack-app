@@ -1,6 +1,5 @@
 import {useState, useEffect} from "react";
 import "./App.scss";
-import CoursesList from "./containers/CoursesList/CoursesList";
 import Main from "./containers/Main/Main";
 import NavBar from "./containers/NavBar/NavBar";
 

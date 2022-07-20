@@ -1,11 +1,11 @@
 import React from "react";
 import "./Course.scss";
 
-const Course = ({course}) => {
+const Course = ({course, onClick}) => {
   const {title, category, location, price, duration, summary} = course;
 
   return (
-    <div className="course-card">
+    <div className="course-card" onClick={onClick}>
       <h2 className="course-card__header">{title}</h2>
       <p>{summary}</p>
       <p>Course duration: {duration}</p>
