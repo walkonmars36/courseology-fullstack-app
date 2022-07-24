@@ -1,7 +1,6 @@
 import {useState, useEffect} from "react";
+import Routing from "./containers/Routing/Routing";
 import "./App.scss";
-import Main from "./containers/Main/Main";
-import NavBar from "./containers/NavBar/NavBar";
 
 function App() {
   const [courses, setCourses] = useState([]);
@@ -33,8 +32,7 @@ function App() {
 
   return (
     <div className="app__content">
-      <NavBar searchFilter={searchFilter} />
-      <Main courses={searchCourses} />
+      <Routing courses={searchCourses} searchFilter={searchFilter} />
     </div>
   );
 }
