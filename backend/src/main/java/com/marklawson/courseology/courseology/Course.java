@@ -1,7 +1,17 @@
 package com.marklawson.courseology.courseology;
 
+import org.hibernate.annotations.GenericGenerator;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class Course {
 
+    @Id
+    @GeneratedValue(generator = "system-uuid")
+    @GenericGenerator(name="system-uuid", strategy = "uuid")
     private String id;
     private String title;
     private String category;
@@ -9,6 +19,9 @@ public class Course {
     private String price;
     private String duration;
     private String summary;
+
+    public Course() {
+    }
 
     public Course(String id, String title, String category, String location, String price, String duration, String summary) {
         this.id = id;

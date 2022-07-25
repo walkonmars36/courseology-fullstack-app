@@ -23,39 +23,39 @@ public class CourseController {
 //    Create course
     @GetMapping("/course")
     public ResponseEntity<String> createCourse(@RequestBody Course course) {
-        courseRepository.createCourse(course);
+        courseRepository.save(course);
         return ResponseEntity.status(HttpStatus.CREATED).body("Created new course with ID: " + course.getId());
     }
 
 
 //    Get course by ID
-    @GetMapping("/course/{id}")
-    public ResponseEntity<Course> getCourseById(@PathVariable String id) {
-        Course course = courseRepository.getCourseById(id);
-        return ResponseEntity.status(HttpStatus.FOUND).body(course);
-    }
+//    @GetMapping("/course/{id}")
+//    public ResponseEntity<Course> getCourseById(@PathVariable String id) {
+//        Course course = courseRepository.getCourseById(id);
+//        return ResponseEntity.status(HttpStatus.FOUND).body(course);
+//    }
 
 
 //    Get all courses
     @GetMapping("/courses")
     public ResponseEntity<List<Course>> getAllCourses() {
-        List<Course> courses = courseRepository.getAllCourses();
+        List<Course> courses = courseRepository.findAll();
         return ResponseEntity.status(HttpStatus.FOUND).body(courses);
     }
 
 //    Update course
     @GetMapping("/course/update/{id}")
     public ResponseEntity<String> updateCourse(@RequestBody Course newCourse, @PathVariable String id) {
-        courseRepository.updateCourse(newCourse, id);
+        courseRepository.save(newCourse);
         return ResponseEntity.status(HttpStatus.OK).body("Course updated with ID: " + newCourse.getId());
     }
 
 // Delete course
-    @DeleteMapping("/course/delete/{id}")
-    public ResponseEntity<String> deleteCourseById(@PathVariable String id) {
-        courseRepository.deleteCourseById(id);
-        return ResponseEntity.status(HttpStatus.OK).body("Course deleted");
-    }
+//    @DeleteMapping("/course/delete/{id}")
+//    public ResponseEntity<String> deleteCourseById(@PathVariable String id) {
+//        courseRepository.deleteCourseById(id);
+//        return ResponseEntity.status(HttpStatus.OK).body("Course deleted");
+//    }
 
 
 
