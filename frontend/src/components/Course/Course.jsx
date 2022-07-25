@@ -1,17 +1,19 @@
 import React from "react";
 import "./Course.scss";
+import {Link} from "react-router-dom";
 
-const Course = ({course, onClick}) => {
-  const {title, category, location, price, duration, summary} = course;
+const Course = ({courses}) => {
+  const {id, title, category, location, price, duration, summary} = courses;
 
   return (
-    <div className="course-card" onClick={onClick}>
+    <div className="course-card">
       <h2 className="course-card__header">{title}</h2>
       <p>{summary}</p>
       <p>Course duration: {duration}</p>
       <p>Price {price}</p>
       <p>Location: {location}</p>
       <p>Category: {category}</p>
+      <Link to={`/course/${id}`}>Learn More</Link>
     </div>
   );
 };

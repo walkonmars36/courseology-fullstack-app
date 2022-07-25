@@ -6,7 +6,6 @@ const Home = ({courses, searchFilter}) => {
   return (
     <div>
       <NavBar searchFilter={searchFilter} />
-
       <Main courses={courses} />
     </div>
   );

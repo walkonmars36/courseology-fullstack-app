@@ -1,4 +1,3 @@
-import {useState} from "react";
 import "./NavBar.scss";
 import SearchBox from "../../components/SearchBox/SearchBox";
 
