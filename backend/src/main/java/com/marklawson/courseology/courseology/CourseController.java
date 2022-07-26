@@ -5,6 +5,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.transaction.Transactional;
 import java.util.List;
 
 
@@ -21,7 +22,7 @@ public class CourseController {
     }
 
 //    Create course
-    @GetMapping("/course")
+    @PostMapping("/course")
     public ResponseEntity<String> createCourse(@RequestBody Course course) {
         courseRepository.save(course);
         return ResponseEntity.status(HttpStatus.CREATED).body("Created new course with ID: " + course.getId());
@@ -29,11 +30,11 @@ public class CourseController {
 
 
 //    Get course by ID
-//    @GetMapping("/course/{id}")
-//    public ResponseEntity<Course> getCourseById(@PathVariable String id) {
-//        Course course = courseRepository.getCourseById(id);
-//        return ResponseEntity.status(HttpStatus.FOUND).body(course);
-//    }
+    @GetMapping("/course/{id}")
+    public ResponseEntity<Course> getCourseById(@PathVariable String id) {
+        Course course = courseRepository.findByid(id);
+        return ResponseEntity.status(HttpStatus.FOUND).body(course);
+    }
 
 
 //    Get all courses
@@ -51,11 +52,12 @@ public class CourseController {
     }
 
 // Delete course
-//    @DeleteMapping("/course/delete/{id}")
-//    public ResponseEntity<String> deleteCourseById(@PathVariable String id) {
-//        courseRepository.deleteCourseById(id);
-//        return ResponseEntity.status(HttpStatus.OK).body("Course deleted");
-//    }
+    @DeleteMapping("/course/delete/{id}")
+    @Transactional
+    public ResponseEntity<String> deleteCourseById(@PathVariable String id) {
+        courseRepository.deleteByid(id);
+        return ResponseEntity.status(HttpStatus.OK).body("Course deleted");
+    }
 
 
 
