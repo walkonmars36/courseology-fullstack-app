@@ -1,12 +1,14 @@
 import React from "react";
 import Main from "../Main/Main";
 import NavBar from "../NavBar/NavBar";
+import Splash from "../Splash/Splash";
 
 const Home = ({courses, searchFilter}) => {
   return (
     <div>
-      <NavBar searchFilter={searchFilter} />
-      <Main courses={courses} />
+      <Splash />
+      {/* <NavBar searchFilter={searchFilter} />
+      <Main courses={courses} /> */}
     </div>
   );
 };

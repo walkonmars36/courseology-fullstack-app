@@ -1,8 +1,10 @@
 import {useState} from "react";
 import "./AddCourse.scss";
+import {Link} from "react-router-dom";
 
 const AddCourse = () => {
   const [course, setCourse] = useState({
+    id: "",
     title: "",
     category: "",
     location: "",
@@ -11,16 +13,17 @@ const AddCourse = () => {
     summary: "",
   });
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-
-    fetch("http://localhost:8080/course", {
+    const result = await fetch("http://localhost:8080/course", {
       method: "POST",
       headers: {"content-Type": "application/json"},
       body: JSON.stringify(course),
     });
 
     console.log(course);
+    const message = await result.text();
+    alert(message);
     event.target.reset();
   };
 
@@ -38,6 +41,7 @@ const AddCourse = () => {
           Submit
         </button>
       </form>
+      <Link to="/">Back to All Courses</Link>
     </div>
   );
 };
