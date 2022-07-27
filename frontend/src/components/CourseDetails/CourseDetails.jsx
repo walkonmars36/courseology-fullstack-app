@@ -26,7 +26,9 @@ const CourseDetails = () => {
         </div>
       )}
 
-      <Link to="/">Back to courses</Link>
+      <Link to="/all-courses" className="link">
+        Back to courses
+      </Link>
     </div>
   );
 };
