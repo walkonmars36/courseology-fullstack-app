@@ -16,18 +16,19 @@ const AddCourse = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+
+    if (course.title !== "" && course.category !== "" && course.location !== "" && course.price !== "" && course.duration !== "" && course.summary !== "") {
+      event.target.reset();
+      navigate("/form-submitted");
+    } else {
+      alert("Please fill in all fields");
+    }
+
     await fetch("http://localhost:8080/course", {
       method: "POST",
       headers: {"content-Type": "application/json"},
       body: JSON.stringify(course),
     });
-
-    console.log(course);
-    // const message = await result.text();
-    // alert(message);
-
-    navigate("/form-submitted");
-    event.target.reset();
   };
 
   return (

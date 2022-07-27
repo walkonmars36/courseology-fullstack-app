@@ -1,11 +1,12 @@
 @use "../../assets/sass/resets.scss" as *;
 @use "../../assets/sass/variables.scss" as *;
 @use "../../assets/sass/fonts.scss" as *;
+@use "../../assets/sass/components.scss" as *;
 
 .course-card {
   display: flex;
   flex-direction: column;
-  background-color: #184e77;
+  background-color: $color-dark-blue;
   padding: 1em;
 
   &__header {
@@ -15,7 +16,6 @@
   }
 
   & > p {
-    color: $color-white;
     margin: 0.5rem 0;
   }
 }

@@ -8,7 +8,6 @@ const Course = ({courses}) => {
   return (
     <div className="course-card">
       <h2 className="course-card__header">{title}</h2>
-      <p>{summary}</p>
       <p>Course duration: {duration}</p>
       <p>Price {price}</p>
       <p>Location: {location}</p>

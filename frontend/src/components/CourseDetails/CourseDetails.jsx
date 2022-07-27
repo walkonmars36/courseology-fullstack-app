@@ -20,9 +20,13 @@ const CourseDetails = () => {
   return (
     <div className="course-details">
       {course && (
-        <div className="course-details__header">
-          <h1>{course.title}</h1>
-          <p>{course.summary}</p>
+        <div className="course-details__card">
+          <div className="course-details__header">
+            <h1>{course.title}</h1>
+          </div>
+          <div className="course-details__content">
+            <p>{course.summary}</p>
+          </div>
         </div>
       )}
 
