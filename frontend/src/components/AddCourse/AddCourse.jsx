@@ -41,13 +41,15 @@ const AddCourse = () => {
         <input type="text" placeholder="Price" onInput={(event) => setCourse({...course, price: event.target.value})} />
         <input type="text" placeholder="Duration" onInput={(event) => setCourse({...course, duration: event.target.value})} />
         <input type="text" placeholder="Summary" onInput={(event) => setCourse({...course, summary: event.target.value})} />
-        <button type="submit" className="link submit-btn">
-          Submit
-        </button>
+        <div className="add-course__btns">
+          <button type="submit" className="link submit-btn">
+            Submit
+          </button>
+          <Link className="link" to="/all-courses">
+            Cancel
+          </Link>
+        </div>
       </form>
-      <Link className="link" to="/all-courses">
-        Back to All Courses
-      </Link>
     </div>
   );
 };

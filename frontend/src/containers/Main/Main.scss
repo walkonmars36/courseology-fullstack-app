@@ -3,6 +3,6 @@
 
 .main {
   &__content {
-    @include mobile;
+    height: 100vh;
   }
 }

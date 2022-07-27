@@ -6,13 +6,18 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 
   &__content {
     background-color: $color-dark-blue;
-    padding: 1em;
+    padding: 3em;
     color: $color-white;
-    margin-top: 3rem;
+    margin: 2rem 0;
+    border-radius: $border-radius;
+  }
+
+  &__btn {
+    align-self: flex-end;
   }
 }

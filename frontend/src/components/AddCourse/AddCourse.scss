@@ -18,6 +18,8 @@
     align-items: center;
     width: 90%;
     margin: 1rem 0;
+    padding: 3rem 0;
+    background-color: $color-dark-blue;
 
     & > input {
       width: 80%;
@@ -32,7 +34,11 @@
     }
   }
 
-  .submit-btn {
-    margin-top: 1rem;
+  &__btns {
+    width: 60%;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
