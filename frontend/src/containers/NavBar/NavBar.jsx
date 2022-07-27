@@ -5,10 +5,11 @@ import {Link} from "react-router-dom";
 const NavBar = ({searchFilter}) => {
   return (
     <div className="nav">
+      <h1 className="nav__header">_courseology</h1>
       <SearchBox searchFilter={searchFilter} />
-      <div className="nav__add-course">
-        <Link to="/add-course">Add Course</Link>
-      </div>
+      <Link className="link" to="/add-course">
+        Add Course
+      </Link>
     </div>
   );
 };

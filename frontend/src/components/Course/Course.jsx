@@ -13,7 +13,9 @@ const Course = ({courses}) => {
       <p>Price {price}</p>
       <p>Location: {location}</p>
       <p>Category: {category}</p>
-      <Link to={`/course/${id}`}>Learn More</Link>
+      <Link className="link" to={`/course/${id}`}>
+        Learn More
+      </Link>
     </div>
   );
 };

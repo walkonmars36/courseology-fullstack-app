@@ -5,10 +5,15 @@ import NavBar from "../NavBar/NavBar";
 
 const Main = ({courses, searchFilter}) => {
   return (
-    <div className="main">
-      <NavBar searchFilter={searchFilter} />
-      <CoursesList courses={courses} />
-    </div>
+    <>
+      <div className="main__nav">
+        <NavBar searchFilter={searchFilter} />
+      </div>
+
+      <div className="main__content">
+        <CoursesList courses={courses} />
+      </div>
+    </>
   );
 };
 

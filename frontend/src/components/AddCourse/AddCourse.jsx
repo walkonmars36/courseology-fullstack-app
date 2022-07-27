@@ -41,7 +41,7 @@ const AddCourse = () => {
           Submit
         </button>
       </form>
-      <Link to="/">Back to All Courses</Link>
+      <Link to="/all-courses">Back to All Courses</Link>
     </div>
   );
 };

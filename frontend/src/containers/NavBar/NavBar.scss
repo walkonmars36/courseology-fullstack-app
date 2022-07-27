@@ -1,1 +1,11 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #184e77;
+  padding: 2em 2em;
 
+  & > * {
+    margin: 0.7rem 0;
+  }
+}

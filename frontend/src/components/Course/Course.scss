@@ -1,16 +1,21 @@
 @use "../../assets/sass/resets.scss" as *;
+@use "../../assets/sass/variables.scss" as *;
+@use "../../assets/sass/fonts.scss" as *;
 
 .course-card {
   display: flex;
   flex-direction: column;
-  border: 1px solid green;
+  background-color: #184e77;
   padding: 1em;
 
   &__header {
+    font-size: $header-h1-font-size;
+    color: $color-white;
     margin: 1rem 0;
   }
 
   & > p {
+    color: $color-white;
     margin: 0.5rem 0;
   }
 }

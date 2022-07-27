@@ -2,5 +2,7 @@
 @use "../../assets/sass/variables.scss" as *;
 
 .main {
-  @include mobile;
+  &__content {
+    @include mobile;
+  }
 }
