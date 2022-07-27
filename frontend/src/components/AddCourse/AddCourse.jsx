@@ -4,7 +4,6 @@ import {Link} from "react-router-dom";
 
 const AddCourse = () => {
   const [course, setCourse] = useState({
-    id: "",
     title: "",
     category: "",
     location: "",
