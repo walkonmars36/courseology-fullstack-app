@@ -5,7 +5,7 @@ import NavBar from "../NavBar/NavBar";
 
 const Main = ({courses, searchFilter}) => {
   return (
-    <div>
+    <div className="main">
       <NavBar searchFilter={searchFilter} />
       <CoursesList courses={courses} />
     </div>

@@ -1,10 +1,5 @@
-@use "../src/assets/sass/resets.scss" as *;
+@use "./assets/sass/variables.scss" as *;
 
 .app {
-  &__content {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin: 1rem auto;
-  }
+  background-color: $color-primary;
 }

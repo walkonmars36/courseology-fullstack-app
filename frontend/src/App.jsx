@@ -31,7 +31,7 @@ function App() {
   };
 
   return (
-    <div className="app__content">
+    <div className="app">
       <Routing courses={searchCourses} searchFilter={searchFilter} />
     </div>
   );

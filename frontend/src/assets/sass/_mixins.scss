@@ -1,0 +1,11 @@
+@mixin mobile($width: 90%, $max-width: 48rem) {
+  width: $width;
+  margin: 0 auto;
+  max-width: $max-width;
+}
+
+@mixin tablet($width: 48rem) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
