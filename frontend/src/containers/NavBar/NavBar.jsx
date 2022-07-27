@@ -9,6 +9,7 @@ const NavBar = ({searchFilter}) => {
         <Link to="/">_courseology</Link>
       </h1>
       <SearchBox searchFilter={searchFilter} />
+
       <Link className="link" to="/add-course">
         Add Course
       </Link>

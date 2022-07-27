@@ -1,6 +1,6 @@
 import {useState} from "react";
 import "./AddCourse.scss";
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 
 const AddCourse = () => {
   const [course, setCourse] = useState({
@@ -12,17 +12,21 @@ const AddCourse = () => {
     summary: "",
   });
 
+  const navigate = useNavigate();
+
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const result = await fetch("http://localhost:8080/course", {
+    await fetch("http://localhost:8080/course", {
       method: "POST",
       headers: {"content-Type": "application/json"},
       body: JSON.stringify(course),
     });
 
     console.log(course);
-    const message = await result.text();
-    alert(message);
+    // const message = await result.text();
+    // alert(message);
+
+    navigate("/form-submitted");
     event.target.reset();
   };
 

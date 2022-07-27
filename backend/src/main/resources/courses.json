@@ -6,7 +6,7 @@
     "location": "Remote",
     "price": "£50",
     "duration": "One Month",
-    "summary": "Cheese ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "summary": "Learn modern HTML5, CSS3 and web design by building a stunning website for your portfolio! Building websites allows you to do fun and creative work, from anywhere in the world, and it even pays well. Web development is one of the most future-proof and highest-paying industries in the world. And HTML and CSS is the entry point to this world!"
   },
   {
     "id": "1",
@@ -15,69 +15,78 @@
     "location": "Remote",
     "price": "£50",
     "duration": "One Month",
-    "summary": "Cake ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "summary": "The most advanced and modern CSS course on the internet: master flexbox, CSS Grid, responsive design, and so much more. Tons of modern CSS techniques to create stunning designs and effects. How CSS works behind the scenes: the cascade, specificity, inheritance, etc. Using Sass in real-world projects: global variables, architecting CSS, managing media queries, etc."
   },
   {
     "id": "2",
     "title": "Learn Javascript",
-    "category": "Web Development",
+    "category": "Frontend Development",
     "location": "Remote",
     "price": "£50",
     "duration": "One Month",
-    "summary": "Biscuit ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "summary": "The modern JavaScript course for everyone! Master JavaScript with projects, challenges and theory. JavaScript is the most popular programming language in the world. It powers the entire modern web. It provides millions of high-paying jobs all over the world. That's why you want to learn JavaScript too! You will also learn how to think like a developer, how to plan application features, how to architect your code, how to debug code, and a lot of other real-world skills that you will need on your developer job."
   },
   {
     "id": "3",
     "title": "Learn Figma",
-    "category": "Web Design",
+    "category": "UI Design",
     "location": "Remote",
     "price": "£50",
     "duration": "One Month",
-    "summary": "Crisps ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "summary": "Use Figma to get a job in UI Design, User Interface, User Experience design, UX Design & Web Design. This course is aimed at people new to design, new to User Experience design. Even if you are not totally sure what UX really means, not to worry. We will start right at the beginning and work our way through step by step."
   },
   {
     "id": "4",
     "title": "Learn ReactJS",
-    "category": "Web Development",
+    "category": "Frontend Development",
     "location": "Remote",
     "price": "£50",
     "duration": "One Month",
-    "summary": "Chocolate ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "summary": "React.js is THE most popular JavaScript library you can use and learn these days to build modern, reactive user interfaces for the web. This course teaches you React in-depth, from the ground up, step by step by diving into all the core basics, exploring tons of examples and also introducing you to advanced concepts as well."
   },
   {
     "id": "5",
     "title": "Learn Typescript",
-    "category": "Web Development",
+    "category": "Frontend Development",
     "location": "Remote",
     "price": "£50",
     "duration": "One Month",
-    "summary": "Apple ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "summary": "TypeScript is a powerful superset of JavaScript that makes development smoother, safer, and helps you catch errors and avoid bugs early on. TypeScript adds a bunch of useful features to the JavaScript that you know and love. It helps you be a more productive developer and forces you to write better code."
   },
   {
     "id": "6",
     "title": "Learn Java",
-    "category": "Web Development",
+    "category": "Backend Development",
     "location": "Remote",
     "price": "£50",
     "duration": "One Month",
-    "summary": "Tomato ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "summary": "This course is designed to give you the Java skills you need to get a job as a Java developer.  By the end of the course, you will understand Java extremely well and be able to build your own Java apps and be productive as a software developer."
   },
   {
     "id": "7",
     "title": "Learn Spring/Spring Boot",
-    "category": "Web Development",
+    "category": "Backend Development",
     "location": "Remote",
     "price": "£50",
     "duration": "One Month",
-    "summary": "Olive ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "summary": "Spring Boot has a lot of magic going for it. Developing REST Services with Spring Boot is cool and fun. Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can “just run”. Most Spring Boot applications need very little Spring configuration."
   },
   {
     "id": "8",
     "title": "Learn MySQL",
-    "category": "Web Development",
+    "category": "Database Management",
     "location": "Remote",
     "price": "£50",
     "duration": "One Month",
-    "summary": "Pesto ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "summary": "Consistently ranked the most in-demand skill in recent employer surveys, SQL is a fantastic way to increase your income and boost your professional development. So many companies today use MySQL, including Twitter, Uber, Airbnb, Dropbox, Github, Kickstarter, Udemy, Slack, and many others. Unsure about the difference between SQL and MySQL? MySQL is the most popular open source SQL database out there, so it is a great choice to begin your learning journey."
+  },
+  {
+    "id": "ff808081823ed5a801823ff287bc0006",
+    "title": "Learn Python",
+    "category": "Backend",
+    "location": "Remote",
+    "price": "£50",
+    "duration": "One Month",
+    "summary": "This Python For Beginners Course Teaches You The Python Language Fast. Includes Python Online Training With Python 3. This course is aimed at complete beginners who have never programmed before, as well as existing programmers who want to increase their career options by learning Python."
   }
 ]
