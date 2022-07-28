@@ -9,3 +9,8 @@
     @content;
   }
 }
+
+@mixin container($width: 90%) {
+  width: $width;
+  margin: 0 auto;
+}

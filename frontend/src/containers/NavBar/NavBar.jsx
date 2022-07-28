@@ -8,11 +8,12 @@ const NavBar = ({searchFilter}) => {
       <h1 className="nav__header">
         <Link to="/">_courseology</Link>
       </h1>
-      <SearchBox searchFilter={searchFilter} />
-
-      <Link className="link" to="/add-course">
-        Add Course
-      </Link>
+      <div className="nav__inputs">
+        <SearchBox searchFilter={searchFilter} />
+        <Link className="link" to="/add-course">
+          Add Course
+        </Link>
+      </div>
     </div>
   );
 };

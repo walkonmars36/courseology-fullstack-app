@@ -1,9 +1,2 @@
+@use "./assets/sass/resets.scss" as *;
 @use "./assets/sass/variables.scss" as *;
-
-.app {
-  background-color: $color-dark-aqua;
-
-  @media screen and (min-width: 1064px) {
-    height: 100vh;
-  }
-}

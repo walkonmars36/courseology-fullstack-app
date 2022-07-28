@@ -5,7 +5,7 @@ import NavBar from "../NavBar/NavBar";
 
 const Main = ({courses, searchFilter}) => {
   return (
-    <>
+    <div div className="main">
       <div className="main__nav">
         <NavBar searchFilter={searchFilter} />
       </div>
@@ -13,7 +13,7 @@ const Main = ({courses, searchFilter}) => {
       <div className="main__content">
         <CoursesList courses={courses} />
       </div>
-    </>
+    </div>
   );
 };
 

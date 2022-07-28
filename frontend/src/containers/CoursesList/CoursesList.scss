@@ -1,8 +1,11 @@
-@use "../../assets/sass/resets.scss" as *;
+// @use "../../assets/sass/resets.scss" as *;
+@use "../../assets/sass/mixins.scss" as *;
 
 .course-list {
+  @include container;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   grid-gap: 1rem;
-  padding: 1rem;
+  padding: 4em 0 20em;
+  height: 100vh;
 }

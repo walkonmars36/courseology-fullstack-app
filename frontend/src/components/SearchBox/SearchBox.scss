@@ -6,12 +6,16 @@
   &__input {
     width: 100%;
     background-color: $color-light-aqua;
+    color: $color-white;
     padding: 0.7rem 1rem;
     border-radius: 0.25rem;
     font-size: 1rem;
     font-weight: bold;
-
     font-family: inherit;
     font-size: 1rem;
   }
+}
+
+::-webkit-input-placeholder {
+  color: $color-white;
 }
