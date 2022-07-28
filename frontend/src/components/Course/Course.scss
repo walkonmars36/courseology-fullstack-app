@@ -8,6 +8,7 @@
   flex-direction: column;
   justify-content: space-between;
   background-color: $color-dark-blue;
+
   min-height: 340px;
 
   &__header {
@@ -29,6 +30,5 @@
 
   &__btn {
     padding: 1em;
-    margin: 1rem;
   }
 }
