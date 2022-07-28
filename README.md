@@ -17,7 +17,7 @@ This project brought together all the skills developed during the course.
 * Creating a local database with MySQL
 
 
-All the course data is fetched from the API and from there the user can click for more information on the individual course. <br />
+All the course data is fetched from the API and from there the user can click for more information on the individual course. 
 This will fetch the relevant object from the API and display it in course overview. 
 
 There is also search functionality which has access to all the keys on the object, returning any course that has a match 
@@ -28,14 +28,14 @@ Lastly there is the ability to add a course via the add course form. On submissi
 Below are some screenshots both at mobile and desktop sizes.
 
 ---
-### Main container - desktop view
+### Main container - mobile view
 ---
 
 
 ![courses_mobile](/screenshots/courses_mobile.png)
 
 ---
-### Main container - mobile view
+### Main container - desktop view
 ---
 
 
